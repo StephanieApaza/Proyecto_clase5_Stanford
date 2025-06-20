@@ -22,7 +22,7 @@ header{
 
 .logo{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .main a:hover{
@@ -31,20 +31,20 @@ header{
 
 .subnav{
     background-color: #2b2b2b;
-    padding: 10px 20px;
+    padding: 30px 50px;
 }
 
 .subnav ul {
     list-style: none;
     display: flex;
-    gap:20px;
+    gap:50px;
     justify-content: center;
 }
 
 .subnav a{
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .subnav a:hover{
