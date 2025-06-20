@@ -60,3 +60,39 @@ header{
 .login a:hover{
     text-decoration: underline;
 }
+
+.banner{
+    background-position: center;
+    text-align: center;
+    padding: 100px;
+    position: relative;
+}
+
+.banner h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form.search{
+    display: flex;
+    justify-content: center;
+}
+
+form.search input{
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+form.search button{
+    padding: 20px 30px;
+    background-color: #8c1515;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
