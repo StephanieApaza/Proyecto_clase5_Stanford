@@ -81,24 +81,37 @@ header{
 form.search{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
-form.search input{
-    padding: 20px 110px;
+.search_content {
+    position: relative;
+    max-width: 750px;
+    width: 100%;
+}
+
+.search_content input {
+    width: 100%;
+    padding: 30px;
     font-size: 30px;
+    text-align: center;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    margin-bottom: 40px;
+    background-color: white;
 }
 
-form.search button{
-    padding: 20px 50px;
+.search_content button {
+    position: absolute;
+    right: 2.5px;
     background-color: #8c1515;
     border: none;
-    border-radius: 5px;
+    color: white;
+    padding: 18.5px 35px;
+    border-radius: 4px;
     cursor: pointer;
-    margin-bottom: 40px;
+    font-size: 40px;
+    margin-top: 2px;
 }
 
 .education_options{
