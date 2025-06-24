@@ -168,3 +168,30 @@ form.search{
     color: white;
     z-index: 3;
 }
+
+.block_title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 35px;
+}
+
+.more_link{
+    text-align: end;
+    cursor: pointer;
+    font-size: 20px;
+    color: #8c1515;
+    font-weight: bold;
+    position: relative;
+    right: 50px;
+    margin-bottom: 30px;
+}
+
+.front_credentials img{
+    display: block;
+    width: 100%;
+    max-width: unset;
+    height: auto;
+    margin-inline: auto;
+}
+
