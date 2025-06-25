@@ -81,18 +81,19 @@ header{
 form.search{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .search_content {
     position: relative;
     max-width: 750px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .search_content input {
     width: 100%;
-    padding: 30px;
+    padding: 30px 60px;
     font-size: 30px;
     text-align: center;
     font-weight: bold;
@@ -118,7 +119,7 @@ form.search{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 18px;
-    padding: 60px 20px;
+    padding: 20px 10px;
     max-width: 1400px;
     margin: 0 auto; /* para centrar*/
 }
@@ -210,9 +211,19 @@ img {
 
 @media screen and (max-width: 768px) {
 .header-container {
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
     gap: 10px;
+}
+
+.logo{
+    font-size: 20px;
+    text-align: left;
+}
+
+.login{
+    text-align: right;
 }
 
 .subnav ul {
@@ -233,21 +244,29 @@ img {
     font-size: 24px;
 }
 
+form.search{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
 .search_content input {
     font-size: 18px;
     padding: 20px;
+    text-align: left;
+    margin-bottom;
 }
 
 .search_content button {
     font-size: 25px;
-    padding: 15px 25px;
+    padding: 11px 15px;
 }
 
 .education_options {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 0px;
+    padding: 5px 5px;
 }
 
 .education_options .card {
