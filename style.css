@@ -260,6 +260,44 @@ img {
     padding: 15px;
 }
 
+.featured_programs{
+    background-color: #f4f4f4;
+}
+
+.programs_list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto; /* para centrar*/
+}
+
+.programs_list .card{
+    background-color:white;
+    box-shadow: 0 4px 8px rgba(67, 65, 65, 0.7);
+}
+
+.programs_list .card h2{
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.programs_list .card h3{
+    font-size: 15px;
+    color: #333;
+    padding: 15px;
+}
+
+.programs_list .card h4{
+    font-size: 17px;
+    color:#8c1515;
+    line-height: 1.5;
+    padding: 15px;
+}
+
 @media screen and (max-width: 768px) {
 .header-container {
     flex-direction: row;
