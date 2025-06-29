@@ -298,6 +298,61 @@ img {
     padding: 15px;
 }
 
+.testimonial{
+    display: flex;
+    background-image: url(https://online.stanford.edu/sites/default/files/styles/front_intro_image/public/2023-10/Stanford-pillars-homepage-image.jpg.webp?itok=2EgsPoQq);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial info{
+    display: block;
+}
+
+.testimonial img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.testimonial .person p{
+    margin: 5px 0;
+}
+
+.testimonial .name {
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.testimonial .role {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.testimonial .degree {
+    font-size: 14px;
+    color: #e98300;
+    text-align: center;
+}
+
+.testimonial blockquote {
+    margin-top: 90px;
+    font-size: 40px;
+    line-height: 1.6;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
 @media screen and (max-width: 768px) {
 .header-container {
     flex-direction: row;
