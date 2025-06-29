@@ -308,6 +308,13 @@ img {
     z-index: 1;
 }
 
+.testimonial .overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(19, 13, 13, 0.462);
+    z-index: 2;
+}
+
 .testimonial info{
     display: block;
 }
@@ -318,10 +325,14 @@ img {
     border-radius: 50%;
     object-fit: cover;
     margin-top: 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .testimonial .person p{
     margin: 5px 0;
+    position: relative;
+    z-index: 2;
 }
 
 .testimonial .name {
