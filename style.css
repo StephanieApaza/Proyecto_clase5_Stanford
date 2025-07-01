@@ -51,6 +51,16 @@ header{
     text-decoration: underline;
 }
 
+.subnav a i.fa-search{
+    margin-right: 5px;
+}
+
+.subnav a i.fa-chevron-down{
+    margin-left: 5px;
+    position: relative;
+    top: 4px;
+}
+
 .login a{
     color:white;
     font-weight: bold;
@@ -59,6 +69,10 @@ header{
 
 .login a:hover{
     text-decoration: underline;
+}
+
+.login a i{
+    margin-right: 5px;
 }
 
 .banner{
