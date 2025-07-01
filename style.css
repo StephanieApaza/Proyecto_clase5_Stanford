@@ -146,6 +146,12 @@ form.search{
 
 .education_options .card{
     background-color:white;
+    transition: transform 0.2s ease;
+}
+
+.education_options .card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
 .education_options .card h2{
