@@ -198,27 +198,30 @@ form.search{
 }
 
 .container_full {
-    max-width: 1200px;
+    max-width: 1450px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .block_title{
     text-align: center;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
-    padding: 35px;
+    padding: 40px;
 }
 
 .more_link{
-    text-align: end;
+    text-align: right;
     cursor: pointer;
     font-size: 20px;
-    color: #8c1515;
-    font-weight: bold;
-    position: relative;
-    right: 50px;
+    margin-right: 10px;
     margin-bottom: 30px;
+}
+
+.more_link a{
+    color: #8c1515;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .front_credentials img{
@@ -226,6 +229,7 @@ form.search{
     width: 100%;
     max-width: unset;
     height: auto;
+    object-fit: cover;
     margin-inline: auto;
 }
 
