@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -596,7 +601,12 @@ img {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+
+header{
+    padding: 10px;
+}
+
 .header-container {
     flex-direction: row;
     justify-content: space-between;
@@ -607,10 +617,15 @@ img {
 .logo{
     font-size: 20px;
     text-align: left;
+    margin-left: 5px;
+    margin-top: 15px;
 }
 
 .login{
     text-align: right;
+    margin-right: 5px;
+    margin-top: 2px;
+    font-size: 15px;
 }
 
 .subnav ul {
@@ -618,8 +633,17 @@ img {
     gap: 20px;
 }
 
+.subnav a{
+    font-size: 15px;
+}
+
 .banner h1 {
-    font-size: 30px;
+    font-size: 45px;
+}
+
+.banner p{
+    font-size: 40px;
+    margin-bottom: 40px;
 }
 
 .banner{
@@ -632,26 +656,32 @@ img {
 
 form.search{
     display: flex;
-    justify-content: center;
     margin-bottom: 5px;
+}
+
+.search_content {
+    position: relative;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .search_content input {
     font-size: 18px;
-    padding: 20px;
-    text-align: left;
+    padding: 15px;
+    padding-left: 30px;
 }
 
 .search_content button {
     font-size: 25px;
-    padding: 11px 15px;
+    padding: 9px 15px;
 }
 
 .education_options {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding: 5px 5px;
+    padding: 15px;
 }
 
 .education_options .card {
@@ -659,7 +689,7 @@ form.search{
 }
 
 .education_options .card img {
-    width: 35%;
+    width: 20%;
     height: auto;
     display: block;
     margin: 0;
@@ -675,23 +705,195 @@ form.search{
 .education_options .card .card-content h2 {
     font-size: 18px;
     color: #8c1515;
+    margin-bottom: 2px;
+    padding-bottom: 0;
 }
 
 .education_options .card .card-content p {
     font-size: 14px;
     color: #333;
     line-height: 1.4;
+    margin-top: 0;
 }
 
-.block_title {
-    font-size: 28px;
+.block_title{
+    text-align: center;
+    font-size: 24px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+.more_link{
+    text-align: center;
+    font-size: 15px;
+}
+
+.course_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.course_list .card{
+    width: 100%;
+    padding: 0;
+}
+
+.course_list .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.course_list .card h2{
+    font-size: 18px;
+}
+
+.course_list .card h3{
+    font-size: 15px;
+}
+
+.course_list .card h4{
+    font-size: 15px;
+    line-height: 1,5px;
+}
+
+.title_c{
+    text-align: center;
+    font-size: 25px;   
+}
+
+.link{
+    text-align: center;
+    font-size: 15px;
+    margin-right: 15px;
+    padding-left: 25px;
+}
+
+.programs_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    margin: 0 auto;
+}
+
+.programs_list .card{
+    width: 100%;
+    padding: 0;
+}
+
+.programs_list .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.programs_list .card h2{
+    font-size: 18px;
+}
+
+.programs_list .card h3{
+    font-size: 15px;
+}
+
+.programs_list .card h4{
+    font-size: 15px;
+    line-height: 1,5px;
+}
+
+.title_p{
+    text-align: center;
+    font-size: 25px;   
+}
+
+.m_link{
+    text-align: center;
+    font-size: 15px;
+    margin-right: 15px;
+    padding-left: 25px;
+}
+
+.featured_programs{
+    background-color: #f4f4f4;
     padding: 20px;
 }
 
-.more_link {
-    font-size: 16px;
+.testimonial{
+    padding: 40px 10px;
+}
+
+.testimonial_content{
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    right: 0;
+    gap: 30px;
+}
+
+.info{
+    align-items: center;
+    text-align: center;
+}
+
+.quote blockquote{
+    font-size: 17px;
+}
+
+.testimonial img{
+    width: 150px;
+    height: 150px;
+}
+
+.name{
+    font-size: 16px;
+}
+
+.role{
+    font-size: 14px;
+}
+
+.degree{
+    font-size: 12px;
+}
+
+.footer_social{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer_social .social_media{
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer_info{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer_nav{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+.global_links, .global_policy{
+    font-size: 10px;
+}
+
+.footer_nav p{
+    font-size: 12px;
 }
 }
 
