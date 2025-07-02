@@ -294,19 +294,30 @@ img {
 .course_list .card{
     background-color:white;
     box-shadow: 0 4px 8px rgba(67, 65, 65, 0.7);
+    transition: transform 0.2s ease;
+}
+
+.course_list .card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card-content{
+    padding: 10px;
 }
 
 .course_list .card h2{
     font-size: 20px;
     color: #333;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 15px 5px;
 }
 
 .course_list .card h3{
     font-size: 15px;
     color: #333;
-    padding: 15px;
+    padding: 0px 15px 10px;
+    font-weight: normal;
 }
 
 .course_list .card h4{
@@ -316,10 +327,20 @@ img {
     padding: 15px;
 }
 
+.course_list .card .icono_portafolio{
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
 .course_list .card p{
     font-size: 15px;
     color: #333;
     padding: 15px;
+}
+
+.enrollment_open{
+    color: #8c1515;
 }
 
 .featured_programs{
@@ -370,26 +391,42 @@ img {
 .programs_list .card{
     background-color:white;
     box-shadow: 0 4px 8px rgba(67, 65, 65, 0.7);
+    transition: transform 0.2s ease;
+}
+
+.programs_list .card:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.card-content_f{
+    padding: 10px;
 }
 
 .programs_list .card h2{
     font-size: 20px;
     color: #333;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 15px 5px;
 }
 
 .programs_list .card h3{
     font-size: 15px;
     color: #333;
-    padding: 15px;
+    padding: 0px 15px 10px;
+    font-weight: normal;
 }
 
 .programs_list .card h4{
-    font-size: 17px;
+    font-size: 15px;
     color:#8c1515;
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 15px;
+}
+
+.programs_list .card .icono_portafolio_f{
+    margin-bottom: 15px;
+    padding: 0 15px;
 }
 
 .testimonial{
@@ -491,7 +528,7 @@ img {
 .footer_social ul li a {
     color: #333;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .footer_social ul li a:hover {
