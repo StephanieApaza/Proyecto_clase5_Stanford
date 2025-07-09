@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stanford Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class = "header-container">
-            <div class = "logo">Stanford | ONLINE</div>
+            <div class = "logo">
+                <span class="logo_stanford">Stanford l</span>
+                <span class="logo_online">ONLINE</span>
+            </div>
             <div class="login">
                 <a href="#">
                     <i class="fas fa-user"></i>
-                    MyStanfordConnection
+                    My<strong>Stanford</strong>Connection
                 </a>
             </div>
         </div>
@@ -85,7 +89,7 @@
         <div class="container_full">
             <h2 class="block_title">Stanford Content. Stanford Faculty. Stanford Credentials.</h2>
             <p class="more_link">
-                <a href="/stanford-credentials">LEARN MORE ABOUT CREDENTIALS ></a>
+                <a href="/stanford-credentials">LEARN MORE ABOUT CREDENTIALS <i class="fas fa-angle-right"></i></a>
             </p>
             <img loading="lazy"src="https://online.stanford.edu/sites/default/files/2025-04/Stanford-Credential-Pathway_1500x533.png" alt="Stanford credentials">
         </div>
@@ -94,7 +98,7 @@
     <section class="featured_courses">
         <h2 class="title_c">Featured Courses</h2>
         <p class="link">
-            <a ref="/courses">BROWSE ALL COURSES ></a>
+            <a ref="/courses">BROWSE ALL COURSES <i class="fas fa-angle-right"></i></a>
         </p>
         <div class="course_list">
             <article class="card">
@@ -138,7 +142,7 @@
     <section class="featured_programs">
         <h2 class="title_p">Featured Programs</h2>
         <p class="m_link">
-            <a ref="/programs">BROWSE ALL PROGRAMS ></a>
+            <a ref="/programs">BROWSE ALL PROGRAMS <i class="fas fa-angle-right"></i></a>
         </p>
         <div class="programs_list">
             <article class="card">
@@ -200,7 +204,7 @@
         <div class="footer_container">
             <div class="footer_social">
                 <ul class="social_media">
-                    <li><a href="#"><strong>Stanford   Engineering Center for Global & Online Education</strong></a></li>
+                    <li><a href="#"><strong>Stanford Engineering Center for Global & Online Education</strong></a></li>
                     <li><a href="#">Site Search</a></li>
                 </ul>
                 <ul class="iconos">
@@ -211,31 +215,36 @@
                 </ul>
             </div>
             <div class="footer_info">
-                <div class="logo">
+                <div class="logo_footer">
                     <a href="https://www.stanford.edu/">
                         <img src="https://online.stanford.edu/themes/custom/stanfordonline/images/footer-stanford-logo@2x.png" alt="Stanford University" width="110" height="51">
                     </a>
                 </div>
                 <nav class="footer_nav">
-                    <ul class="global_links">
-                        <li><a href="#"><a>Stanford Home</a></li>
-                        <li><a href="#"><a>Maps & Directions</a></li>
-                        <li><a href="#"><a>Search Stanford</a></li>
-                        <li><a href="#"><a>Emergency info</a></li>
-                    </ul>
+                    <div class="footer_nav_columns">
+                        <ul class="global_links">
+                            <li><a href="#">Stanford Home</a></li>
+                            <li><a href="#">Maps & Directions</a></li>
+                            <li><a href="#">Search Stanford</a></li>
+                            <li><a href="#">Emergency info</a></li>
+                        </ul>
 
-                    <ul class="global_policy">
-                        <li><a href="#">Terms of Use</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Copyright</a></li>
-                        <li><a href="#">Trademarks</a></li>
-                        <li><a href="#">Non-discrimination</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                    </ul>
+                        <ul class="global_policy">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Copyright</a></li>
+                            <li><a href="#">Trademarks</a></li>
+                            <li><a href="#">Non-discrimination</a></li>
+                            <li><a href="#">Accessibility</a></li>
+                        </ul>
+                    </div>
                     <p>&copy; Stanford University. Stanford, California 94305. <br></p>
                 </nav>
             </div>                  
         </div>
     </footer>
+    <div class="icono_Stanford">
+        <img src="imagenes/stanford-university-icon.png" alt="chat_bot">
+    </div>
 </body>
 </html>
