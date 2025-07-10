@@ -700,7 +700,7 @@ form.search{
 .search_content input {
     font-size: 18px;
     padding: 15px;
-    padding-left: 30px;
+    padding-left: 60px;
 }
 
 .search_content button {
@@ -765,14 +765,13 @@ form.search{
 
 .featured_courses{
     box-sizing: border-box;
-    padding: 5px;
+    padding: 30px;
 }
 
 .course_list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 2fr);
     gap: 20px;
-    padding: 0 45px;
     margin: 0 auto;
 }
 
@@ -788,7 +787,7 @@ form.search{
 }
 
 .course_list .card h2{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .course_list .card h3{
@@ -798,6 +797,10 @@ form.search{
 .course_list .card h4{
     font-size: 15px;
     line-height: 1,5px;
+}
+
+.course_list .card p{
+    font-size: 15px;
 }
 
 .title_c{
@@ -814,14 +817,13 @@ form.search{
 
 .featured_programs{
     box-sizing: border-box;
-    padding: 5px;
+    padding: 35px;
 }
 
 .programs_list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, 2fr);;
     gap: 20px;
-    padding: 0 45px 45px 45px;
     margin: 0 auto;
 }
 
@@ -915,14 +917,13 @@ form.search{
 }
 
 .footer_social .social_media{
-    flex-direction: column;
     text-align: center;
     font-size: 14px;
 }
 
 .footer_info{
     box-sizing: border-box;
-    padding: 20px;
+    padding: 25px 5px;
     display: flex;
     flex-direction: column;
 }
@@ -930,35 +931,21 @@ form.search{
 .logo_footer{
     justify-content: center;
     align-items: center;
-    padding-left: 155px;
+    padding-left: 220px;
     margin-bottom: 20px;
 }
 
-.footer_nav{
-    padding: 5px 10px 10px 40px;
-}
-
-.footer_nav_columns{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    font-size: 13px;
-    line-height: 0.5;
-}
-
-.global_links {
-    flex-direction: column;
-    flex: 1;
-    font-weight: 400;
+.global_links{
+    font-size: 12px;
 }
 
 .global_policy{
-    flex-direction: column;
-    flex: 1;
+    font-size: 12px;
 }
 
 .footer_nav p{
     font-size: 13px;
+    padding-left: 90px;
 }
 
 .subnav{
@@ -984,7 +971,8 @@ form.search{
 }
 }
 
-@media screen and (max-width: 768px) {
+/*
+@media screen and (max-width: 1024px){
 
 .subnav{
     padding: 10px 20px;
@@ -1011,170 +999,48 @@ form.search{
     font-size: 10px;
 }
 
-.banner h1 {
-    font-size: 50px;
-}
-
-.banner p{
-    font-size: 35px;
-    margin-bottom: 40px;
-}
-
-.banner{
-    padding-top: 5px
-}
-
-.search_content {
-    position: relative;
-    max-width: 530px;
-    width: 100%;
-}
-
-.search_content input {
-    font-size: 25px;
-    padding: 20px;
-    padding-left: 70px;
-}
-
-.search_content button {
-    font-size: 30px;
-    padding: 15px 20px;
-}
-
-.education_options{
-    padding: 15px 5px;
-}
-
-.education_options .card h2{
-    font-size: 15px;
-}
-
-.education_options .card p{
-    font-size: 12px;
-    padding: 10px;
-}
-
-.education_options .card img{
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
-
-.container_full{
-    padding: 10px;
-}
-
-.block_title{
-    font-size: 23px;
-}
-
-.more_link{
-    font-size: 15px;
-}
-
 .featured_courses{
-    padding: 10px 40px;
-}
-
-.title_c{
-    font-size: 26px;
-}
-
-.link{
-    font-size: 15px;
-    margin-right: 5px;
+    padding: 10px 60px;
 }
 
 .course_list{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
+}
+
+.course_list .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .featured_programs{
-    padding: 10px 40px;
-}
-
-.title_p{
-    font-size: 26px;
-}
-
-.m_link{
-    font-size: 15px;
-    margin-right: 5px;
+    padding: 10px 60px 60px 60px;
 }
 
 .programs_list{
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+    gap: 30px;
 }
 
-.programs_list .card h2{
-    font-size: 17px;
+.programs_list .card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
-.programs_list .card h4{
-    font-size: 15px;
-}
-
-.testimonial{
-    padding: 40px 30px;
-}
-
-.testimonial img{
-    width: 120px;
-    height: 120px;
-}
-
-.name{
-    font-size: 16px;
-}
-
-.role{
-    font-size: 13px;
-}
-
-.degree{
-    font-size: 12px;
+.quote blockquote{
+    font-size: 35px;
+    padding: 0 5px 0 5px;
 }
 
 .quote::before {
     position: absolute;
     top: -20px;
     left: 310px;
-    width: 70px;
-    height: 70px;
+    width: 200px;
+    height: 200px;
 }
-
-.quote blockquote{
-    font-size: 20px;
-    padding: 0 5px 0 5px;
-}
-
-.footer_social{
-    flex-direction: column;
-    gap: 10px;
-}
-
-.footer_social .social_media{
-    text-align: left;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-.footer_nav_columns{
-    font-size: 12px;
-}
-
-.footer_info{
-    padding: 40px 30px;
-}
-
-.footer_nav{
-    margin-left: 17px;
-}
-
-.footer_nav p{
-    font-size: 13px;
-}
-
 }
